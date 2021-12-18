@@ -1,8 +1,8 @@
 /*
-基本数据类型   所占字节    范围(有符号,符号占一位: 2^n-1)
 # bit是计算机中最小的存储单位
 # byte是计算机中基本存储单元
 # 1byte = 8bit
+基本数据类型   所占字节    范围(有符号,符号占一位: 2^n-1)
 整数:
 byte           1个字节   -128 ~ 127
 short		   2个字节   -(2^15) ~ (2^15 -1)
@@ -26,8 +26,5 @@ public class Number {
 
         // int x = 10L; // 错误: 不兼容的类型: 从long转换到int可能会有损失
         // System.out.println(x);
-
-        float n5 = 1F;
-        double n6 = 1D;
     }
 }
