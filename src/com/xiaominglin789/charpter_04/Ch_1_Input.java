@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ch_01_Input {
+public class Ch_1_Input {
   public static void main(String[] args) {
     // 实例Scanner对象
     Scanner scanner = new Scanner(System.in);
