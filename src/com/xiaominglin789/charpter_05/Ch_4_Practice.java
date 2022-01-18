@@ -40,6 +40,8 @@ public class Ch_4_Practice {
     题目二:
       判断找出100-999之间的水仙花数。
         水仙花数: 153 = 1*1*1 + 5*5*5 + 3*3*3,每位数的立方的和等于数本身
+      思路:
+        - 找出: 个位、十位、百位
      */
     int start = 100;
     int end = 999;
@@ -51,5 +53,73 @@ public class Ch_4_Practice {
         System.out.println("水仙花数: " + n);
       }
     }
+
+    /**
+    题目三:
+      输出 1~100 之间不能被5整除的数,要求:每5个一行
+      - 不能被5整数的数: n % 5 != 0
+      - 每5个一行: 用一个变量控制自增到5,就恢复默认值
+     */
+    int limit = 5;
+    String res= "";
+    for (int x=1, y=100, index=1; x <= y; x++) {
+      if (x % 5 != 0) {
+        index++;
+        res = res + " " + x;
+        if (index > limit) {
+          System.out.println("不能被5整除的数:" + res);
+          index = 1;
+          res = "";
+        }
+      }
+    }
+
+    /**
+    题目四:
+      输出小写字母 a-z 以及大写的 Z~A
+       - 字符 b = a + 1, W = Z - 1
+     */
+    for (char i = 'a';i <= 'z'; i++) {
+      System.out.print(i + " ");
+    }
+    System.out.println();
+    for (char i = 'Z';i >= 'A'; i--) {
+      System.out.print(i + " ");
+    }
+    System.out.println();
+
+    /**
+    题目五：
+      求出 1-1/2+1/3-1/4+1/5....+1/99-1/100 的结果
+       - 奇数次 + 1/n
+       - 偶数次 - 1/n
+       - 循环100次
+       - 注意: 1/n => 保证是double =修改=> 1.0/n
+       - 遇到分数时 => 请确保值为double
+     */
+    double temp = 0;
+    for (int i=1,tend=100; i <= tend; i++) {
+      temp = (i % 2 != 0) ? (temp + 1.0/i) : (temp - 1.0/i);
+    }
+    System.out.println("1-1/2+1/3-1/4+1/5....+1/99-1/100 = " + temp);
+
+    /**
+    题目六：
+      求出 1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...+100) 的结果
+      - 100项相加 => 外循环 i
+        - 每项内部的数量都在变化 => 内循环 k
+        - 条件: k <= i => 内循环的累加 => sum += k 
+     */
+    int next=0;
+    for(int i=1,send=100; i <= send; i++) {
+      for (int k=1; k <= i; k++) {
+        // i=1,k=1 => next= 1
+        // i=2,k=2 => next= 1 + (1 + 2)
+        // i=3,k=3 => next= 1 + (1 + 2) + (1+2+3)
+        // i=4,k=4 => next= 1 + (1 + 2) + (1+2+3) + (1+2+3+4)
+        next += k;
+      }
+    }
+    System.out.println("1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...+100) = " + next);
   }
 }
