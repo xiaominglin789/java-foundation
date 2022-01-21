@@ -98,8 +98,8 @@ public class Ch_2_Pratice {
       sum += nums[i];
     }
     System.out.println("\n创建长度为10,元素在【1，100】之间的随机数组: " + toString(nums) + " ,平均值: " + (sum/nums.length));
-    int max = nums[0];
     int maxIndex= 0;
+    int max = nums[0];
     System.out.print("\n倒序打印: ");
     for (int i=nums.length-1; i >=0; i--) {
       System.out.print(nums[i] + " ");
