@@ -44,12 +44,13 @@ public class Ch_2_Pratice {
     System.out.print("\n任意输入一个数字: ");
     int insertNum = sc.nextInt();
     int willInsertIndex = 0;
-    for (int i=0; i < upArr.length-1; i++) {
-      if (insertNum < upArr[i]) {
-        willInsertIndex = i;
-        break;
+    for (int i=0; i <= upArr.length-1; i++) {
+      if (insertNum >= upArr[i]) {
+        // 未来的位置
+        willInsertIndex = i+1;
       }
     }
+    System.out.println(insertNum + " 应该插入到下标: " + willInsertIndex);
     // 旧数组扩容操作
     int[] upArrTemp = new int[upArr.length+1];
     for(int i=0; i <= upArrTemp.length-1; i++) {
@@ -65,7 +66,8 @@ public class Ch_2_Pratice {
         upArrTemp[i] = upArr[i-1];
       }
     }
-    System.out.println("扩容后新数组: " + toString(upArrTemp));
+    upArr = upArrTemp;
+    System.out.println("扩容后,数组: " + toString(upArr));
 
 
     /**
@@ -77,7 +79,62 @@ public class Ch_2_Pratice {
       System.out.println(arr1[i] + ", " + arr2[i])
     }
      */
+
+    /**
+    题目:
+      随机生成10个整数（范围:[1-100]),保存到数组,
+        要求:
+         倒序打印、
+         求平均值、最大值、最大值的下标、并查找里面是否存在8?
+     */
+    int count = 10;
+    
+    int[] nums = new int[count];
+    int sum = 0;
+    int finder = 8;
+    boolean isExists = false;
+    for (int i=0,limit=100; i < nums.length; i++) {
+      nums[i] = (int)(Math.random() * limit + 1);
+      sum += nums[i];
+    }
+    System.out.println("\n创建长度为10,元素在【1，100】之间的随机数组: " + toString(nums) + " ,平均值: " + (int)(sum/nums.length));
+    int max = nums[0];
+    int maxIndex= 0;
+    System.out.print("\n倒序打印: ");
+    for (int i=nums.length-1; i >=0; i--) {
+      System.out.print(nums[i] + " ");
+      if (max <= nums[i]) {
+        maxIndex = i;
+        max = nums[i];
+      }
+      if (finder == nums[i]) {
+        isExists = true;
+      }
+    }
+    System.out.println();
+    System.out.println("最大值是: " + max + ", 下标是: " + maxIndex);
+    System.out.println("8是否在该数组中 ? " + isExists);
+
+    /**
+    手写冒泡排序
+     */
+    for (int i=0; i < nums.length-1; i++) {
+      boolean change = false;
+      for (int j=0; j < nums.length-1 - i; j++) {
+        if (nums[j] > nums[j+1]) {
+          int temp = nums[j];
+          nums[j] = nums[j+1];
+          nums[j+1] = temp;
+          change = true;
+        }
+      }
+      if (!change) {
+        break;
+      }
+    }
+    System.out.println("冒泡排序后: " + toString(nums));
   }
+
 
   /**
   打印整型数组
@@ -85,7 +142,7 @@ public class Ch_2_Pratice {
   public static String toString(int[] arr) {
     String result = "{";
 
-    for (int i=0; i<arr.length; i++) {
+    for (int i=0; i< arr.length; i++) {
       if (i > 0 && i < arr.length) {
         result += ", ";
       }
