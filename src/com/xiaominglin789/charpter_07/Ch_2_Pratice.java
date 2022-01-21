@@ -97,7 +97,7 @@ public class Ch_2_Pratice {
       nums[i] = (int)(Math.random() * limit + 1);
       sum += nums[i];
     }
-    System.out.println("\n创建长度为10,元素在【1，100】之间的随机数组: " + toString(nums) + " ,平均值: " + (int)(sum/nums.length));
+    System.out.println("\n创建长度为10,元素在【1，100】之间的随机数组: " + toString(nums) + " ,平均值: " + (sum/nums.length));
     int max = nums[0];
     int maxIndex= 0;
     System.out.print("\n倒序打印: ");
