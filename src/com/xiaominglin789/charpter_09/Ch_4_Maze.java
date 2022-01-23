@@ -18,7 +18,8 @@ public class Ch_4_Maze {
     int column = 7;
     int[][] map = generalMap(
       row, 
-      column, 
+      column,
+      new Point(2,2),
       new Point(3,1),
       new Point(3,2),
       new Point(4,4),
