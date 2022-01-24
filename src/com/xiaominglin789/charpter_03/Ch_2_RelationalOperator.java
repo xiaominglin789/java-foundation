@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_03;
+
 public class Ch_2_RelationalOperator {
   public static void main(String[] args) {
     int g1 = 10;

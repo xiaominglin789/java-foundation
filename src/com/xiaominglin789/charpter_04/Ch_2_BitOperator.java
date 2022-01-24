@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_04;
+
 public class Ch_2_BitOperator {
   public static void main(String[] args) {
     // `&`按位与: 同位都为1 结果为1，否则为0

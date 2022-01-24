@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_03;
+
 public class Ch_4_LogicOperatorPractice {
   public static void main(String[] args) {
     int x = 5;

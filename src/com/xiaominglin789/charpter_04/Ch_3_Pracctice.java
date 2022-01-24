@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_04;
+
 public class Ch_3_Pracctice {
   public static void main(String[] args) {
     // 10(int) / 3(int) = 3(int)

@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_09;
+
 public class Ch_8_VarParameterExercise {
   public static void main(String[] args) {
     /**

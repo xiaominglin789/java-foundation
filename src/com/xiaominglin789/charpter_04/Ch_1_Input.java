@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_04;
+
 import java.util.Scanner;
 
 public class Ch_1_Input {

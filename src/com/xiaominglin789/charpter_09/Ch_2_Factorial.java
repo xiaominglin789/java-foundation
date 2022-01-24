@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_09;
+
 public class Ch_2_Factorial {
   public static void main(String[] args) {
     Test2 t2 = new Test2();

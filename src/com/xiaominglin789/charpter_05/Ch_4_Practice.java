@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_05;
+
 public class Ch_4_Practice {
   public static void main(String[] args) {
     /**

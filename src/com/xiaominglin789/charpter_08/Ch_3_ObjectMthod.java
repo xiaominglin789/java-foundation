@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_08;
+
 public class Ch_3_ObjectMthod {
   public static void main(String[] args) {
     Person girl = new Person();

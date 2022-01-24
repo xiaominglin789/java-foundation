@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_02;
+
 public class Ch_3_CharType {
   public static void main(String[] args) {
     /**

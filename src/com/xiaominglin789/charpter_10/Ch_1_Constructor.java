@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_10;
+
 public class Ch_1_Constructor {
   public static void main(String[] args) {
     Person person = new Person("米兰", 18);

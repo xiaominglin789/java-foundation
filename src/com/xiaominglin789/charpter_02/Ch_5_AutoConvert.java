@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_02;
+
 public class Ch_5_AutoConvert {
   public static void main(String[] args) {
     // 自动转换: 精度小转精度大

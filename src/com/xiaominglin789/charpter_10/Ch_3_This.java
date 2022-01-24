@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_10;
+
 public class Ch_3_This {
   public static void main(String[] args) {
     Cat cat = new Cat("小花", 2);

@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_02;
+
 public class Ch_6_ForceConvert {
   public static void main(String[] args) {
     /**

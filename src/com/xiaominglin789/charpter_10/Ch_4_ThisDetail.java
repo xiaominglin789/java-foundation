@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_10;
+
 public class Ch_4_ThisDetail {
   public static void main(String[] args) {
     Pig p = new Pig(); // name=佩奇

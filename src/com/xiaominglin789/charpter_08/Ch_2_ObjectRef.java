@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_08;
+
 public class Ch_2_ObjectRef {
   public static void main(String[] args) {
     Dog dog = new Dog();

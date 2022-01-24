@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_09;
+
 public class Ch_4_Maze {
   public static void main(String[] args) {
     /**

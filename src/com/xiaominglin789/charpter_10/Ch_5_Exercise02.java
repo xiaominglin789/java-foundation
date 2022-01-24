@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_10;
+
 public class Ch_5_Exercise02 {
   public static void main(String[] args) {
     /**
@@ -22,7 +24,7 @@ public class Ch_5_Exercise02 {
     题目七:
       设计一个Cat类，有名字、颜色、年龄,定义一个show方法显示其属性信息
      */
-    Cat cat = new Cat("小花", "橘色", 3);
+    Cat1 cat = new Cat1("小花", "橘色", 3);
     cat.show();
 
     /**
@@ -132,7 +134,7 @@ class Cale {
   }
 }
 
-class Cat {
+class Cat1 {
   /**
   名字、颜色、年龄,定义一个show方法
    */
@@ -140,7 +142,7 @@ class Cat {
   private String color;
   private int age;
 
-  public Cat(String name, String color, int age) {
+  public Cat1(String name, String color, int age) {
     this.name = name;
     this.color = color;
     this.age = age;

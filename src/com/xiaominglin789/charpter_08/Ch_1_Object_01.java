@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_08;
+
 public class Ch_1_Object_01 {
   public static void main(String[] args) {
     /**

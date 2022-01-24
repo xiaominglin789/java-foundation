@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_07;
+
 public class Ch_1_TWArray {
   public static void main(String[] args) {
     /**

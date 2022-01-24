@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_07;
+
 import java.util.Scanner;
 
 public class Ch_2_Pratice {

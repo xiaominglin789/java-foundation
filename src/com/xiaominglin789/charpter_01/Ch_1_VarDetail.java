@@ -1,3 +1,5 @@
+package com.xiaominglin789.charpter_01;
+
 public class Ch_1_VarDetail {
   public static void main(String[] args) {
     /** 
